@@ -13,27 +13,28 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Toukoum Portfolio",
+  title: "Khushal Portfolio",
   description: "Interactive portfolio with an AI-powered Memoji that answers questions about me, my skills, and my experience",
   keywords: [
-    "Toukoum", 
+    "Khushal Sharma", 
     "Portfolio", 
     "Developer", 
     "AI", 
     "Interactive", 
     "Memoji", 
-    "Web Development",
-    "Full Stack",
-    "Next.js",
-    "React"
+    "Robotics",
+    "App Development",
+    "Machine Learning",
+    "Flutter",
+    "Python"
   ],
   authors: [
     {
-      name: "Toukoum",
+      name: "Khushal Sharma",
       url: "https://toukoum.fr",
     },
   ],
-  creator: "Toukoum",
+  creator: "Khushal",
   openGraph: {
     type: "website",
     locale: "en_US",

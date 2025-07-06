@@ -52,13 +52,13 @@ const questionConfig = [
 
 // Helper drawer data
 const specialQuestions = [
-  'Mountain Bike you said?? Show me!',
-  'Who are you?',
-  'Can I see your resume?',
-  'What projects are you most proud of?',
-  'What are your skills?',
-  'How can I reach you?',
-  "What's the craziest thing you've ever done?",
+  "Robotics and AI? That sounds intense — got something cool to show?",
+  "Can you tell me a bit about yourself?",
+  "Is your resume available to view?",
+  "Which of your projects are you most proud of?",
+  "What technical skills do you have?",
+  "What's the best way to contact you?",
+  "What's the most ambitious or wild project you've worked on?",
 ];
 
 const questionsByCategory = [
@@ -80,7 +80,6 @@ const questionsByCategory = [
     questions: [
       'Can I see your resume?',
       'What makes you a valuable team member?',
-      'Where are you working now?',
       'Why should I hire you?',
       "What's your educational background?",
     ],
@@ -97,7 +96,6 @@ const questionsByCategory = [
     icon: GraduationCapIcon,
     questions: [
       'What are your skills?',
-      'How was your experience at École 42?',
     ],
   },
   {
@@ -105,10 +103,10 @@ const questionsByCategory = [
     name: 'Fun',
     icon: PartyPopper,
     questions: [
-      'Mountain Bike you said?? Show me!',
-      "What's the craziest thing you've ever done?",
-      'Mac or PC?',
-      'What are you certain about that 90% get wrong?',
+      "You make robots? Got a demo or video?",
+      "What's the weirdest or most ambitious thing you've built?",
+      "Mac or PC — what's your pick?",
+      "What's something most people get totally wrong about AI or research?",
     ],
   },
   {
@@ -116,9 +114,9 @@ const questionsByCategory = [
     name: 'Contact & Future',
     icon: MailIcon,
     questions: [
-      'How can I reach you?',
+      "How can I reach you?",
       "What kind of project would make you say 'yes' immediately?",
-      'Where are you located?',
+      "Where are you located?",
     ],
   },
 ];

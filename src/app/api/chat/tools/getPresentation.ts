@@ -8,7 +8,7 @@ export const getPresentation = tool({
   execute: async () => {
     return {
       presentation:
-        "I'm Raphael Giraud, a 21-year-old developer specializing in AI at 42 Paris. Formerly a high-level mountain biker, I now intern at LightOn AI in Paris. I'm passionate about AI, tech, Entrepreneurship and SaaS tech.",
+        "I'm Khushal Sharma, an AI and robotics enthusiast finishing my Master’s at ASU. Born in Mumbai, I enjoy building smart systems, sketching when bored, and making tech do the heavy lifting. Big fan of automation, visual feedback, and watching robots navigate the world."
     };
   },
 });
