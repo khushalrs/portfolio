@@ -1,31 +1,40 @@
-
-
 ![image](assets/readme-photo.png)
- 
-# World's first AI portfolio 🤖✨  
 
-**Static portfolios are dead.**  
-So I built [toukoum.fr](https://toukoum.fr).
+# 🤖 Khushal Sharma — Interactive Portfolio
 
-Instead of making you scroll endlessly, my portfolio adapts to *you*.  
-Ask a question — my AI avatar replies instantly.
+This isn't just a portfolio — it's a **conversation**.
 
-## 👇 What can you ask?
+Welcome to my AI-powered digital twin: a chat-driven experience that talks like me, thinks like me, and maybe even throws in a sarcastic comment or two. Whether you're a recruiter, collaborator, or just curious, you can chat with my portfolio to get answers as if I were right there — minus the caffeine dependency.
 
-- 🧠 **Tech recruiter?** Ask about my stack & results  
-- 💻 **Dev?** Dive into my code & mindset  
-- 🧑‍🤝‍🧑 **Friend or family?** See what I’ve been working on  
+> 🔗 **Try it out:** [khushalrs-portfolio](https://khushalrs-portfolio.netlify.app/)
 
 ---
 
-This is not a portfolio.  
-It’s a **conversation tailored to your curiosity**.
+## 🗣️ What Can You Do Here?
 
-➡️ **Try it now:** [https://toukoum.fr](https://toukoum.fr)  
-*What will you ask?*
+- 🔍 Ask about my projects, research, or thesis
+- 🧠 Get answers in my voice — informed, chill, and slightly opinionated
+- 🤝 Discover my skills, interests, and what I bring to the table
+- 😏 Get a feel for how I think and work — beyond a static résumé
 
+---
 
+## ⚙️ Behind the Scenes
 
-#### 🔖 Tags
+The portfolio is powered by a custom GPT-based assistant that reflects:
+- My tone
+- My background
+- My personality
 
-`#AIPortfolio` `#InnovationInTech` `#DigitalResume` `#JobSearch` `#TechInnovation` `#WebDevelopment` `#FutureTech`
+---
+
+## 🤝 Let's Connect
+
+If the portfolio AI doesn’t win you over, feel free to reach out directly:
+
+- 💼 LinkedIn: [khushal-sharma](https://linkedin.com/in/khushal-sharma)
+
+---
+
+_“AI won’t take your job — but mine might help you do yours faster.”_
+
