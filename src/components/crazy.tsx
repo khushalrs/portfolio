@@ -4,7 +4,7 @@ import React from 'react';
 import { Photos, PhotoItem } from './photos';
 
 const Crazy = () => {
-  const sportPhotos: PhotoItem[] = [
+  const pics: PhotoItem[] = [
     {
       src: '/blancmont.JPG',
       alt: 'Mont Blanc',
@@ -19,7 +19,7 @@ const Crazy = () => {
           Mont Blanc (4810m)
         </h2>
       </div>
-      <Photos photos={sportPhotos} />
+      <Photos photos={pics} />
     </div>
   );
 };

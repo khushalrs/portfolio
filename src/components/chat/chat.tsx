@@ -286,11 +286,11 @@ const Chat = () => {
         />
         <div className="pt-2">
           <GitHubButton
-            href="https://github.com/toukoum/portfolio"
+            href="https://github.com/khushalrs/portfolio"
             data-color-scheme="no-preference: light; light: light; dark: light_high_contrast;"
             data-size="large"
             data-show-count="true"
-            aria-label="Star toukoum/portfolio on GitHub"
+            aria-label="Star khushalrs/portfolio on GitHub"
           >
             Star
           </GitHubButton>
@@ -300,10 +300,10 @@ const Chat = () => {
       {/* Fixed Avatar Header with Gradient */}
       <div
         className="fixed top-0 right-0 left-0 z-50"
-        style={{
-          background:
-            'linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.95) 30%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%)',
-        }}
+        // style={{
+        //   background:
+        //     'linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.95) 30%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%)',
+        // }}
       >
         <div
           className={`transition-all duration-300 ease-in-out ${hasActiveTool ? 'pt-6 pb-0' : 'py-6'}`}
@@ -382,7 +382,7 @@ const Chat = () => {
         </div>
 
         {/* Fixed Bottom Bar */}
-        <div className="sticky bottom-0 bg-white px-2 pt-3 md:px-0 md:pb-4">
+        <div className="sticky bottom-0 bg-background px-2 pt-3 md:px-0 md:pb-4">
           <div className="relative flex flex-col items-center gap-3">
             <HelperBoost submitQuery={submitQuery} setInput={setInput} />
             <ChatBottombar
@@ -395,14 +395,6 @@ const Chat = () => {
             />
           </div>
         </div>
-        <a
-          href="https://x.com/toukoumcode"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="fixed right-3 bottom-0 z-10 mb-4 hidden cursor-pointer items-center gap-2 rounded-xl px-4 py-2 text-sm hover:underline md:block"
-        >
-          @toukoum
-        </a>
       </div>
     </div>
   );

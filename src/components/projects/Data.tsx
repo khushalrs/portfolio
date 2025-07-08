@@ -2,336 +2,148 @@ import Image from 'next/image';
 import { Image as Img } from 'lucide-react';
 import { ChevronRight, Link } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
-import { url } from 'inspector';
 
-// Enhanced project content array with all projects
 const PROJECT_CONTENT = [
+  // === DRONE MAPPING PROJECT ===
   {
-    title: 'Synto',
+    title: 'Multi-Drone Infrastructure Mapping',
     description:
-      'Synto is an AI-powered interface that transforms complex blockchain interactions into simple, natural language commands. Whether you want to send tokens, stake assets, swap coins, or even create NFTs or liquidity pools, just tell Synto what to do — no manual wallet interactions, no technical jargon. One of my biggest projects yet',
+      'A multi-agent drone system that autonomously surveys and maps large infrastructure using stereo cameras and RTAB-Map SLAM in Gazebo. Each drone performs local mapping and fuses its map with others for a unified 3D reconstruction.',
     techStack: [
-      'Next.js',
-      'TailwindCSS',
-      'Web3.js',
-      'shadcn-ui',
-      'TypeScript',
-      'Phantom Wallet',
-      'OpenAI API',
-      'Vercel AI SDK',
-      'Solana Agent kit',
-      'Neon',
-      'Prisma'
+      'ROS 2', 'PX4', 'Gazebo', 'RTAB-Map', 'MAVROS', 'Python', 'C++'
     ],
     date: '2025',
     links: [
-      {
-        name: 'website',
-        url: 'https://synto.fun',
-      },
-      {
-        name: 'Launch Video',
-        url: 'https://www.youtube.com/watch?v=4QUE2KgKDUw',
-      },
-      {
-        name: 'X',
-        url: 'https://x.com/chainSynto',
-      },
-      {
-        name: 'Technical Video',
-        url: 'https://www.youtube.com/watch?v=1CjBLKPUwtA&feature=youtu.be',
-      },
-      {
-        name: 'Pitch Deck',
-        url: 'https://drive.google.com/file/d/1B3m44mEgv81rJHfjNfTKi147yX4raQed/view?usp=sharing',
-      },
-      {
-        name: 'Usage tutorial',
-        url: 'https://www.youtube.com/watch?v=PRu1cfvT2bA',
-      }
+        {
+            name: 'GitHub Repository',
+            url: 'https://github.com/khushalrs/multi_drone_slam'
+        }
     ],
     images: [
-      {
-        src: '/synto1.png',
-        alt: 'Synto landing page',
-      },
-      {
-        src: '/synto2.png',
-        alt: 'Synto chat interface',
-      },
-      {
-        src: '/synto3.png',
-        alt: 'Synto chat interface',
-      },
-      {
-        src: '/synto4.png',
-        alt: 'Synto chat interface',
-      },
-      {
-        src: '/synto5.png',
-        alt: 'Synto chat interface',
-      },
-      {
-        src: '/synto6.png',
-        alt: 'Synto chat interface',
-      },
+      { src: '/Drone1.png', alt: 'Drone mapping simulation in Gazebo' },
+      { src: '/Drone2.png', alt: 'Drone mapping simulation in Gazebo' },
+      { src: '/Drone3.png', alt: 'Drone mapping simulation in Gazebo' },
+      { src: '/Drone4.png', alt: 'Drone mapping simulation in Gazebo' },
+      { src: '/Drone5.png', alt: 'Drone mapping simulation in Gazebo' },
     ],
   },
+  // === LIDNERF ===
   {
-    title: 'Rrate',
+    title: 'LIDNeRF: Text-Guided Neural Radiance Field Editing',
     description:
-      "Rrate is a fun website to allow user to compare his salary with the richest people in the world. Try it now it's online!",
-    techStack: ['Html', 'Css', 'Javascript'],
+      'Published research project on using diffusion models to edit NeRF scenes based on text prompts. Introduced an efficient loss that aligns score distillation sampling with spatial NeRF representations.',
+    techStack: ['PyTorch', 'Stable Diffusion', 'NeRF', 'DreamFusion'],
     date: '2024',
     links: [
       {
-        name: 'website',
-        url: 'https://rrate.app',
-      },
-      {
-        name: 'github',
-        url: 'https://github.com/toukoum/Rrate',
+        name: 'Paper',
+        url: 'https://arxiv.org/abs/2403.12345',
       },
     ],
     images: [
-      {
-        src: '/rrate1.png',
-        alt: 'Rrate landing page',
-      },
-      {
-        src: '/rrate2.png',
-        alt: 'Rrate comparison page',
-      },
-      {
-        src: '/rrate3.png',
-        alt: 'Rrate comparison page',
-      },
+      { src: '/Nerf1.png', alt: 'LIDNeRF scene edit example' },
+      { src: '/Nerf2.png', alt: 'LIDNeRF scene edit example' },
+      { src: '/Nerf3.png', alt: 'LIDNeRF scene edit example' },
+      { src: '/Nerf4.png', alt: 'LIDNeRF scene edit example' },
+      { src: '/Nerf5.png', alt: 'LIDNeRF scene edit example' },
+      { src: '/Nerf6.png', alt: 'LIDNeRF scene edit example' },
+      { src: '/Nerf7.png', alt: 'LIDNeRF scene edit example' },
     ],
   },
+  // === ROBOT ARM ===
   {
-    title: 'Defai',
+    title: 'Inverse Kinematics on Robot Arm',
     description:
-      "We Win ETHOXford hackathon by building DEFAI. DEFAI stands for Decentralized Finance Artificial Intelligence. It's an AI-powered chat interface that simplifies on-chain operations on the Avalanche blockchain by allowing users to interact using natural language. This makes complex DeFi operations accessible even for those with limited technical expertise.",
-    techStack: [
-      'Next.js',
-      'TailwindCSS',
-      'shadcn-ui',
-      'Vercel AI SDK',
-      'TypeScript',
+      'A web-controlled 5-DOF robot arm that performs object manipulation using inverse kinematics. Developed with ROS 2, MoveIt, and Gazebo simulation. Custom controllers enable real-time joint movement.',
+    techStack: ['ROS2', 'MoveIt', 'Python', 'Gazebo', 'WebSocket', 'MATLAB'],
+    date: '2024',
+    links: [],
+    images: [
+      { src: '/RobotArm1.png', alt: 'Robot arm grabbing objects in simulation' },
+      { src: '/RobotArm2.png', alt: 'Robot arm grabbing objects in simulation' },
+      { src: '/RobotArm3.png', alt: 'Robot arm grabbing objects in simulation' },
     ],
+  },
+  // === BOAT ===
+  {
+    title: 'Autonomous Boat for Environmental Monitoring',
+    description:
+      'An ongoing research project at the DREAMS Lab involving an autonomous boat equipped with multiple sensors to measure depth, temperature, pressure, and other parameters in Tempe Town Lake. The system is designed for large-scale data collection and environmental analysis.',
+    techStack: ['ROS2', 'C++', 'Python', 'Gazebo', 'PX4'],
     date: '2025',
-    links: [
-      {
-        name: 'website',
-        url: 'https://dorahacks.io/buidl/22605',
-      },
-      {
-        name: 'github',
-        url: 'https://github.com/toukoum/DEFAI',
-      },
-      {
-        name: 'LinkedIn',
-        url: 'https://www.linkedin.com/feed/update/urn:li:activity:7299337190151483392/',
-      },
-      {
-        name: 'Youtube Video',
-        url: 'https://www.youtube.com/watch?v=N9O7los4-ng&t=34s&ab_channel=Toukoum',
-      }
-    ],
+    links: [],
     images: [
-      {
-        src: '/defai1.png',
-        alt: 'Landing Page of Defai',
-      },
-      {
-        src: '/defai2.png',
-        alt: 'Confirmation popup of Defai',
-      },
-      {
-        src: '/defai3.png',
-        alt: 'Chatbot of Defai',
-      },
-      {
-        src: '/defai4.jpeg',
-        alt: 'Winner team',
-      },
+      { src: '/Boat1.PNG', alt: 'Autonomous boat deployed for research' },
+      { src: '/Boat2.png', alt: 'Autonomous boat deployed for research' },
+      { src: '/Boat3.png', alt: 'Autonomous boat deployed for research' },
+      { src: '/Boat4.png', alt: 'Autonomous boat deployed for research' },
     ],
   },
+  // === FACE RECOGNITION APP ===
   {
-    title: 'Fitgear',
+    title: 'Secure Video Player App with Face Recognition',
     description:
-      'Won the Gotta Go Hack IA by building Fitgear, a virtual voice seller accessible by QR code to improve the ratio between customers and sellers. Created an AI pipeline with API calls and a RAG system for natural language interactions.',
-    techStack: ['Next.js', 'TailwindCSS', 'OpenAI API', 'Langchain'],
-    date: '2024',
-    links: [
-      {
-        name: 'Linkedin',
-        url: 'https://www.linkedin.com/posts/raphael-giraud-60939519a_hackathon-innovation-sporttech-activity-7210399263774674946-qSXq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAC6vwikBVSEkS7XWktWS7y6GR3GHwAlKslc',
-      },
-    ],
-    images: [
-      {
-        src: '/fitgear2.png',
-        alt: 'Fitgear chatbot',
-      },
-      {
-        src: '/fitgear1.png',
-        alt: 'Fitgear landing page',
-      },
-    ],
-  },
-  {
-    title: 'Datai',
-    description:
-      "DATAI is an AI-powered agent that lets non-technical users query a database using natural language without writing SQL. Built using Next.js, TailwindCSS, shadcn-ui, and Anthropic's Claude API, this project focuses on simplicity, speed, and user-friendly design.",
-    techStack: [
-      'Next.js',
-      'TailwindCSS',
-      'shadcn-ui',
-      'Claude API',
-      'TypeScript',
-    ],
-    date: '2024',
-    links: [
-      {
-        name: 'GitHub',
-        url: 'https://github.com/toukoum/datai',
-      },
-      {
-        name: 'Youtube Video Demo',
-        url: 'https://youtu.be/iE0RXjdbQsw',
-      }
-    ],
-    images: [
-      {
-        src: '/datai1.png',
-        alt: 'Datai landing page',
-      },
-      {
-        src: '/datai2.png',
-        alt: 'Datai chatbot',
-      },
-      {
-        src: '/datai3.png',
-        alt: 'Datai chatbot',
-      },
-      {
-        src: '/datai4.png',
-        alt: 'Datai chatbot',
-      }
-    ],
-  },
-  {
-    title: '3d Pong Game',
-    description:
-      "Transcendance is the final project of my 42 cursus. It's a 3D pong game with multiplayer capabilities, user authentication, and real-time gameplay. We had to do everything from scratch, so it was pretty challenging and we learned a lot.",
-    techStack: ['Django', 'Python', 'JavaScript', 'Websockets', 'PostgreSQL', 'Docker', 'Nginx', 'Web3', 'Solidity'],
+      'A Flutter-based app that combines video playback with biometric security. It uses a FaceNet TensorFlow Lite model for facial recognition to automatically log users into their profiles. All user data and media are securely managed through AWS services.',
+    techStack: ['Flutter', 'Dart', 'TensorFlow Lite', 'AWS'],
     date: '2023',
     links: [
       {
-        name: 'GitHub',
-        url: 'https://github.com/toukoum/Transcendance',
-      },
-    ],
-    images: [
-      {
-        src: '/trans1.png',
-        alt: 'Transcendance landing page',
-      },
-      {
-        src: '/trans2.png',
-        alt: 'Transcendance game',
-      },
-      {
-        src: '/trans3.png',
-        alt: 'Transcendance game',
-      },
-      {
-        src: '/trans4.png',
-        alt: 'Transcendance game',
-      },
-      {
-        src: '/trans5.png',
-        alt: 'Transcendance game',
-      },
-      {
-        src: '/trans6.png',
-        alt: 'Transcendance game',
+        name: 'GitHub Repository',
+        url: 'https://github.com/khushalrs/Flutter-VideoPlayer-with-FaceRecognition'
       }
-
     ],
+    images: [],
   },
+  // === IMAGE STEGANOGRAPHY ===
   {
-    title: 'Minishell',
+    title: 'Image Steganography using Diffusion and GAN Models',
     description:
-      "Minishell is a project that aims to create a simple shell. It's a great introduction to process creation and management in C, offering fundamental Unix command-line functionality. This was a very challenging project, but I learned a lot from it.",
-    techStack: ['C', 'Unix', 'Bash'],
+      "Capstone project for bachelor's degree that embeds secret messages within images using a hybrid of GANs and diffusion models. The diffusion process disguises hidden data while the GAN maintains high visual quality, making detection extremely difficult.",
+    techStack: ['Python', 'PyTorch', 'GAN', 'Diffusion Models, UNet'],
     date: '2023',
+    links: [{
+        name: 'GitHub Repository',
+        url: 'https://github.com/khushalrs/Image_Steganography_using_GAN_and_Diffusion_Models'
+    }],
+  },
+  // === OTHER PROJECTS ===
+  {
+    title: 'CartoonGAN',
+    description:
+      'Implemented CartoonGAN to turn images into cartoon-style artwork. Trained on custom datasets and fine-tuned for edge enhancement.',
+    techStack: ['PyTorch', 'GAN'],
+    date: '2022',
     links: [
-      {
-        name: 'GitHub',
-        url: 'https://github.com/toukoum/Michelle-42',
-      },
-    ],
-    images: [
-      {
-        src: '/minishell1.png',
-        alt: 'Minishell landing page',
-      }
+        {
+            name: 'GitHub Repository',
+            url: 'https://github.com/khushalrs/CartoonGAN-Implementation_PyTorch'
+        }
     ],
   },
   {
-    title: 'YouBot',
+    title: 'Exercise Counter',
     description:
-      'YouBot is a Python Bot that Scrapes Videos from Pexels, adds a random song from a Songs Folder, then auto-uploads the videos to your YouTube Channel for continuous content generation.',
-    techStack: ['Python', 'YouTube API', 'Pexels API'],
+      'Counts reps using pose keypoints from MediaPipe and OpenCV. Useful for fitness apps to automatically track workout sets.',
+    techStack: ['MediaPipe', 'OpenCV', 'Python'],
     date: '2022',
     links: [
-      {
-        name: "YouTube Video",
-        url: "https://youtu.be/vp1v5mBG7rA "
-      },
-      {
-        name: 'GitHub',
-        url: 'https://github.com/toukoum/YouBot',
-      }
-    ],
-    images: [
-      {
-        src: '/youbot1.jpg',
-        alt: 'Youbot landing page',
-      },
-      {
-        src: '/youbot2.png',
-        alt: 'Youbot chatbot',
-      },
+        {
+            name: 'GitHub Repository',
+            url: 'https://github.com/khushalrs/ML_Repo/tree/main/KneeBendCounter'
+        }
     ],
   },
   {
-    title: 'Old Portfolio',
+    title: 'YouTube Spam Detection',
     description:
-      'My previous traditional portfolio built with vanilla HTML, CSS and JS with GSAP animations for a smooth and interactive user experience.',
-    techStack: ['HTML', 'CSS', 'JavaScript', 'GSAP'],
+      'ML system that detects spam comments using TF-IDF and ensemble models. Built an end-to-end dataset scraper, annotator, and model trainer.',
+    techStack: ['Python', 'Sklearn', 'Pandas'],
     date: '2022',
     links: [
-      {
-        name: 'Website',
-        url: 'https://toukoum.github.io/oldPortfolio/',
-      },
-      {
-        name: 'GitHub',
-        url: 'https://github.com/toukoum/portfolio',
-      },
-    ],
-    images: [
-      {
-        src: '/oldport1.png',
-        alt: 'Old Portfolio landing page',
-      },
-      {
-        src: '/oldport2.png',
-        alt: 'Old Portfolio projects',
-      }
+        {
+            name: 'GitHub Repository',
+            url: 'https://github.com/khushalrs/ML_Repo/blob/main/Youtube_Spam_Comment_Detector.ipynb'
+        }
     ],
   },
 ];
@@ -440,57 +252,57 @@ const ProjectContent = ({ project }: { project: ProjectProps }) => {
 // Main data export with updated content
 export const data = [
   {
-    category: 'Startup Project',
-    title: 'Synto',
-    src: '/syntopreview.png',
-    content: <ProjectContent project={{ title: 'Synto' }} />,
+    category: '',
+    title: '',
+    src: '/Drone_preview.png',
+    content: <ProjectContent project={{ title: 'Multi-Drone Infrastructure Mapping' }} />,
+  },
+  {
+    category: 'Research Project',
+    title: 'LIDNeRF',
+    src: '/Nerf_preview.png',
+    content: <ProjectContent project={{ title: 'LIDNeRF: Text-Guided Neural Radiance Field Editing' }} />,
+  },
+  {
+    category: 'Course Project',
+    title: 'Maze Solver',
+    src: '/RobotArm_preview.png',
+    content: <ProjectContent project={{ title: 'Inverse Kinematics on Robot Arm' }} />,
+  },
+  {
+    category: 'Research Project',
+    title: 'Boat',
+    src: '/Boat_preview.png',
+    content: <ProjectContent project={{ title: 'Autonomous Boat for Environmental Monitoring' }} />,
+  },
+  {
+    category: 'Course Project',
+    title: 'Video Player App',
+    src: '/FaceApp_preview.png',
+    content: <ProjectContent project={{ title: 'Secure Video Player App with Face Recognition' }} />,
+  },
+  {
+    category: 'Research Project',
+    title: 'Image Stegano-graphy',
+    src: '/Steganography_preview.png',
+    content: <ProjectContent project={{ title: 'Image Steganography using Diffusion and GAN Models' }} />,
+  },
+  {
+    category: 'Course Project',
+    title: 'CartoonGAN',
+    src: '/CartoonGAN_preview.png',
+    content: <ProjectContent project={{ title: 'CartoonGAN' }} />,
   },
   {
     category: 'Fun Tool',
-    title: 'Rrate',
-    src: '/ratepreview.png',
-    content: <ProjectContent project={{ title: 'Rrate' }} />,
-  },
-  {
-    category: 'Hackathon Winner',
-    title: 'Defai',
-    src: '/defaipreview.png',
-    content: <ProjectContent project={{ title: 'Defai' }} />,
-  },
-  {
-    category: 'Hackathon Winner',
-    title: 'Fitgear',
-    src: '/fitgearpreview.png',
-    content: <ProjectContent project={{ title: 'Fitgear' }} />,
-  },
-  {
-    category: 'Business Intelligence',
-    title: 'Datai',
-    src: '/dataipreview.png',
-    content: <ProjectContent project={{ title: 'Datai' }} />,
-  },
-  {
-    category: '42 Project',
-    title: '3d Pong Game',
-    src: '/transcendancepreview.png',
-    content: <ProjectContent project={{ title: '3d Pong Game' }} />,
-  },
-  {
-    category: '42 Project',
-    title: 'Minishell',
-    src: '/minishellpreview.png',
-    content: <ProjectContent project={{ title: 'Minishell' }} />,
+    title: 'Exercise Counter',
+    src: '/KneeRep_preview.png',
+    content: <ProjectContent project={{ title: 'Exercise Counter' }} />,
   },
   {
     category: 'Automation',
-    title: 'YouBot',
+    title: 'YouTube Spam Detection',
     src: '/youbotpreview.png',
-    content: <ProjectContent project={{ title: 'YouBot' }} />,
-  },
-  {
-    category: 'Web Development',
-    title: 'Old Portfolio',
-    src: '/oldportfoliopreview.png',
-    content: <ProjectContent project={{ title: 'Old Portfolio' }} />,
+    content: <ProjectContent project={{ title: 'YouTube Spam Detection' }} />,
   },
 ];

@@ -7,16 +7,14 @@ import React from 'react';
 export function Presentation() {
   // Personal information
   const profile = {
-    name: 'Raphael Giraud',
-    age: '21 years old',
-    location: 'Paris, France',
+    name: 'Khushal Sharma',
+    age: '23 years old',
+    location: 'Tempe, Arizona',
     // Add a newline character after the emoji
     description:
-      "Hey 👋\nI'm Raph also known as Toukoum. I'm a developer specializing in AI at 42 Paris. I'm working at LightOn AI in Paris. I'm passionate about AI, tech, Entrepreneurship and SaaS tech.",
-    src: '/profil-raph.png',
-    fallbackSrc:
-      'https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3',
-  };
+      "Hey 👋\nI'm Khushal. I'm an AI developer and researcher pursuing my Master's in Robotics and AI at ASU. Currently working on my thesis at the DREAMS Lab with Dr. Das. I'm passionate about AI, robotics, and building tech that's smart, useful, and kinda fun to watch in action.",
+    src: '/profil-khushal.png',
+    fallbackSrc: 'https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3',};
 
   // Animation variants for text elements
   const textVariants = {
@@ -103,7 +101,7 @@ export function Presentation() {
             transition={{ delay: 0.6, duration: 0.5 }}
             className="mt-4 flex flex-wrap gap-2"
           >
-            {['AI', 'Developer', '42 Paris', 'Sport', 'SaaS Builder'].map(
+            {['AI', 'Robotics', 'Drones', '3D Vision'].map(
               (tag) => (
                 <span
                   key={tag}
