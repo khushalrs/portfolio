@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, easeOut } from 'framer-motion';
 import { Award, Code, GraduationCap, Mail, MessageSquare } from 'lucide-react';
 import React from 'react';
 
@@ -47,7 +47,7 @@ const ChatLanding: React.FC<ChatLandingProps> = ({ submitQuery }) => {
       y: 0,
       transition: {
         duration: 0.4,
-        ease: [0.25, 0.1, 0.25, 1],
+        ease: easeOut,
       },
     },
   };
