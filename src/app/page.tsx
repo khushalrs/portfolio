@@ -4,7 +4,7 @@ import FluidCursor from '@/components/FluidCursor';
 import VantaHaloBackground from '@/components/CausticCursor';
 import { Button } from '@/components/ui/button';
 import WelcomeModal from '@/components/welcome-modal';
-import { motion } from 'framer-motion';
+import { motion, easeInOut } from 'framer-motion';
 import {
   ArrowRight,
   BriefcaseBusiness,
@@ -51,7 +51,7 @@ export default function Home() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { type: 'ease', duration: 0.8 },
+      transition: { ease: easeInOut, duration: 0.8 },
     },
   };
   const bottomElementVariants = {
@@ -59,7 +59,7 @@ export default function Home() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { type: 'ease', duration: 0.8, delay: 0.2 },
+      transition: { ease: easeInOut, duration: 0.8, delay: 0.2 },
     },
   };
 
