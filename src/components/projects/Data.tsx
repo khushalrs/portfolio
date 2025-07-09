@@ -37,7 +37,7 @@ const PROJECT_CONTENT = [
     links: [
       {
         name: 'Paper',
-        url: 'https://arxiv.org/abs/2403.12345',
+        url: 'https://www.igi-global.com/article/lidnerf/369336',
       },
     ],
     images: [
