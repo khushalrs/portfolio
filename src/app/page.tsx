@@ -12,6 +12,7 @@ import {
   Layers,
   PartyPopper,
   UserRoundSearch,
+  Microscope,
 } from 'lucide-react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
@@ -26,11 +27,13 @@ const questions = {
   Fun: 'What do you do in free time? What are your hobbies?',
   Contact:
     'How can I contact you?',
+  Research: 'Tell me about your research and publications.',
 } as const;
 
 const questionConfig = [
   { key: 'Me', color: '#329696', icon: Laugh },
   { key: 'Projects', color: '#3E9858', icon: BriefcaseBusiness },
+  { key: 'Research', color: '#B95F9D', icon: Microscope },
   { key: 'Skills', color: '#856ED9', icon: Layers },
   { key: 'Fun', color: '#B95F9D', icon: PartyPopper },
   { key: 'Contact', color: '#C19433', icon: UserRoundSearch },
@@ -188,7 +191,7 @@ export default function Home() {
         </form>
 
         {/* quick-question grid */}
-        <div className="mt-4 grid w-full max-w-2xl grid-cols-1 gap-3 sm:grid-cols-3 md:grid-cols-5">
+        <div className="mt-4 grid w-full max-w-2xl grid-cols-1 gap-3 sm:grid-cols-3 md:grid-cols-6">
           {questionConfig.map(({ key, color, icon: Icon }) => (
             <Button
               key={key}

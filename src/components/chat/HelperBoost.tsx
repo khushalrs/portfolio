@@ -88,7 +88,11 @@ const questionsByCategory = [
     id: 'projects',
     name: 'Projects',
     icon: CodeIcon,
-    questions: ['What projects are you most proud of?'],
+    questions: ['What projects are you most proud of?',
+      'Any research papers or publications?',
+      'What project challenged you the most?',
+      'Describe a project where you used AI or machine learning.',
+    ],
   },
   {
     id: 'skills',
@@ -96,6 +100,9 @@ const questionsByCategory = [
     icon: GraduationCapIcon,
     questions: [
       'What are your skills?',
+      'What programming languages do you know?',
+      'Do you have experience with AI or machine learning?',
+      'What soft skills do you have?',
     ],
   },
   {
