@@ -96,7 +96,7 @@ const PROJECT_CONTENT = [
   },
   // === IMAGE STEGANOGRAPHY ===
   {
-    title: 'Image Steganography using Diffusion and GAN Models',
+    title: 'Image Steganography Through Hybrid Diffusion-GAN Models',
     description:
       "Capstone project for bachelor's degree that embeds secret messages within images using a hybrid of GANs and diffusion models. The diffusion process disguises hidden data while the GAN maintains high visual quality, making detection extremely difficult.",
     techStack: ['Python', 'PyTorch', 'GAN', 'Diffusion Models, UNet'],

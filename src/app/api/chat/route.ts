@@ -6,6 +6,7 @@ import { getContact } from './tools/getContact';
 import { getInternship } from './tools/getIntership';
 import { getPresentation } from './tools/getPresentation';
 import { getProjects } from './tools/getProjects';
+import { getResearch } from './tools/getResearch';
 import { getResume } from './tools/getResume';
 import { getSkills } from './tools/getSkills';
 
@@ -40,6 +41,7 @@ export async function POST(req: Request) {
       getSkills,
       // getCrazy,
       getInternship,
+      getResearch,
     };
 
     const result = streamText({

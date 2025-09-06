@@ -4,6 +4,7 @@ import Crazy from '../crazy';
 import InternshipCard from '../InternshipCard';
 import { Presentation } from '../presentation';
 import AllProjects from '../projects/AllProjects';
+import Research from '../research';
 import Resume from '../resume';
 import Skills from '../skills';
 
@@ -75,6 +76,16 @@ export default function ToolRenderer({
             return (
               <div key={toolCallId} className="w-full rounded-lg">
                 <InternshipCard />
+              </div>
+            );
+            
+          case 'getResearch':
+            return (
+              <div key={toolCallId} className="w-full rounded-lg">
+                <Research 
+                  publications={tool.result.publications}
+                  projects={tool.result.projects}
+                />
               </div>
             );
 
