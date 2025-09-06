@@ -19,7 +19,7 @@ const researchData = {
       title: "Image Steganography Through Hybrid Diffusion-GAN Models",
       authors: "Khushal Sharma, Soham Singhal, Rohit Raval and Vaishali Kulkarni",
       year: 2023,
-      url: "https://example.com/publication3https://github.com/khushalrs/Image_Steganography_using_GAN_and_Diffusion_Models/blob/main/Image_Steganography_Paper.pdf",
+      url: "https://github.com/khushalrs/Image_Steganography_using_GAN_and_Diffusion_Models/blob/main/Image_Steganography_Paper.pdf",
       abstract: "This project presents an innovative solution for secure message transmission by harnessing the power of image steganography along with generative adversarial networks and diffusion models. Our approach involves the forward diffusion of a concealed image into a cover image, allowing for the covert transmission of sensitive information between devices. When the concealed image is retrieved, it can be seamlessly reverse-diffused to reveal the hidden message.",
       tags: ["Image Steganography", "GAN", "Diffusion Models", "Information Security"],
       image: "/Steganography_preview.png"
