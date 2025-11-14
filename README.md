@@ -6,7 +6,7 @@ This isn't just a portfolio — it's a **conversation**.
 
 Welcome to my AI-powered digital twin: a chat-driven experience that talks like me, thinks like me, and maybe even throws in a sarcastic comment or two. Whether you're a recruiter, collaborator, or just curious, you can chat with my portfolio to get answers as if I were right there — minus the caffeine dependency.
 
-> 🔗 **Try it out:** [khushalrs-portfolio](https://khushalrs-portfolio.netlify.app/)
+> 🔗 **Try it out:** [Portfolio Website](https://www.portfolio.khushalsharma.in/)
 
 ---
 
