@@ -256,13 +256,13 @@ const ProjectContent = ({ project }: { project: ProjectProps }) => {
             {projectData.images.map((image, index) => (
               <div
                 key={index}
-                className="relative aspect-video overflow-hidden rounded-2xl"
+                className="relative aspect-video overflow-hidden rounded-2xl bg-white dark:bg-neutral-900 flex items-center justify-center"
               >
                 <Image
                   src={image.src}
                   alt={image.alt}
                   fill
-                  className="object-cover transition-transform"
+                  className="object-contain p-2 transition-transform"
                 />
               </div>
             ))}
