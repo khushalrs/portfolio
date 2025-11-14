@@ -20,11 +20,11 @@ const PROJECT_CONTENT = [
         }
     ],
     images: [
-      { src: '/Drone1.png', alt: 'Drone mapping simulation in Gazebo' },
-      { src: '/Drone2.png', alt: 'Drone mapping simulation in Gazebo' },
-      { src: '/Drone3.png', alt: 'Drone mapping simulation in Gazebo' },
-      { src: '/Drone4.png', alt: 'Drone mapping simulation in Gazebo' },
-      { src: '/Drone5.png', alt: 'Drone mapping simulation in Gazebo' },
+      { src: '/Drone/Drone1.png', alt: 'Drone mapping simulation in Gazebo' },
+      { src: '/Drone/Drone2.png', alt: 'Drone mapping simulation in Gazebo' },
+      { src: '/Drone/Drone3.png', alt: 'Drone mapping simulation in Gazebo' },
+      { src: '/Drone/Drone4.png', alt: 'Drone mapping simulation in Gazebo' },
+      { src: '/Drone/Drone5.png', alt: 'Drone mapping simulation in Gazebo' },
     ],
   },
   // === LIDNERF ===
@@ -41,13 +41,13 @@ const PROJECT_CONTENT = [
       },
     ],
     images: [
-      { src: '/Nerf1.png', alt: 'LIDNeRF scene edit example' },
-      { src: '/Nerf2.png', alt: 'LIDNeRF scene edit example' },
-      { src: '/Nerf3.png', alt: 'LIDNeRF scene edit example' },
-      { src: '/Nerf4.png', alt: 'LIDNeRF scene edit example' },
-      { src: '/Nerf5.png', alt: 'LIDNeRF scene edit example' },
-      { src: '/Nerf6.png', alt: 'LIDNeRF scene edit example' },
-      { src: '/Nerf7.png', alt: 'LIDNeRF scene edit example' },
+      { src: '/Nerf/Nerf1.png', alt: 'LIDNeRF scene edit example' },
+      { src: '/Nerf/Nerf2.png', alt: 'LIDNeRF scene edit example' },
+      { src: '/Nerf/Nerf3.png', alt: 'LIDNeRF scene edit example' },
+      { src: '/Nerf/Nerf4.png', alt: 'LIDNeRF scene edit example' },
+      { src: '/Nerf/Nerf5.png', alt: 'LIDNeRF scene edit example' },
+      { src: '/Nerf/Nerf6.png', alt: 'LIDNeRF scene edit example' },
+      { src: '/Nerf/Nerf7.png', alt: 'LIDNeRF scene edit example' },
     ],
   },
   // === ROBOT ARM ===
@@ -59,9 +59,9 @@ const PROJECT_CONTENT = [
     date: '2024',
     links: [],
     images: [
-      { src: '/RobotArm1.png', alt: 'Robot arm grabbing objects in simulation' },
-      { src: '/RobotArm2.png', alt: 'Robot arm grabbing objects in simulation' },
-      { src: '/RobotArm3.png', alt: 'Robot arm grabbing objects in simulation' },
+      { src: '/RobotArm/RobotArm1.png', alt: 'Robot arm grabbing objects in simulation' },
+      { src: '/RobotArm/RobotArm2.png', alt: 'Robot arm grabbing objects in simulation' },
+      { src: '/RobotArm/RobotArm3.png', alt: 'Robot arm grabbing objects in simulation' },
     ],
   },
   // === BOAT ===
@@ -73,10 +73,10 @@ const PROJECT_CONTENT = [
     date: '2025',
     links: [],
     images: [
-      { src: '/Boat1.PNG', alt: 'Autonomous boat deployed for research' },
-      { src: '/Boat2.png', alt: 'Autonomous boat deployed for research' },
-      { src: '/Boat3.png', alt: 'Autonomous boat deployed for research' },
-      { src: '/Boat4.png', alt: 'Autonomous boat deployed for research' },
+      { src: '/Boat/Boat1.PNG', alt: 'Autonomous boat deployed for research' },
+      { src: '/Boat/Boat2.png', alt: 'Autonomous boat deployed for research' },
+      { src: '/Boat/Boat3.png', alt: 'Autonomous boat deployed for research' },
+      { src: '/Boat/Boat4.png', alt: 'Autonomous boat deployed for research' },
     ],
   },
   {
@@ -95,11 +95,11 @@ const PROJECT_CONTENT = [
       }
     ],
     images: [
-      { src: '/Illusion1.png', alt: 'Flip anagram illusion: giraffe ↔ penguin' },
-      { src: '/Illusion2.png', alt: 'Rotation illusion: mountain village ↔ horse' },
-      { src: '/Illusion3.png', alt: 'Jigsaw illusion: forest fox ↔ mountain cabin' },
-      { src: '/Illusion4.png', alt: 'Text-blend illusion: hidden word in cracked pavement' },
-      { src: '/Illusion5.png', alt: 'Color hybrid illusion: cactus ↔ Statue of Liberty' }
+      { src: '/IllusionIQ/Flip.png', alt: 'Flip anagram illusion: giraffe ↔ penguin' },
+      { src: '/IllusionIQ/Rotation.png', alt: 'Rotation illusion: mountain village ↔ horse' },
+      { src: '/IllusionIQ/Jigsaw.png', alt: 'Jigsaw illusion: forest fox ↔ mountain cabin' },
+      { src: '/IllusionIQ/TextBlend.png', alt: 'Text-blend illusion: hidden word in cracked pavement' },
+      { src: '/IllusionIQ/MultiObject.png', alt: 'City ↔ Cow' },
     ],
   },
 
@@ -278,31 +278,31 @@ export const data = [
   {
     category: '',
     title: '',
-    src: '/Drone_preview.png',
+    src: '/Drone/Drone_preview.png',
     content: <ProjectContent project={{ title: 'Multi-Drone Infrastructure Mapping' }} />,
   },
   {
     category: 'Research Project',
     title: 'LIDNeRF',
-    src: '/Nerf_preview.png',
+    src: '/Nerf/Nerf_preview.png',
     content: <ProjectContent project={{ title: 'LIDNeRF: Text-Guided Neural Radiance Field Editing' }} />,
   },
   {
     category: 'Course Project',
     title: 'Maze Solver',
-    src: '/RobotArm_preview.png',
+    src: '/RobotArm/RobotArm_preview.png',
     content: <ProjectContent project={{ title: 'Inverse Kinematics on Robot Arm' }} />,
   },
   {
     category: 'Course Project',
     title: 'IllusionIQ',
-    src: '/RobotArm_preview.png',
+    src: '/RobotArm/RobotArm_preview.png',
     content: <ProjectContent project={{ title: 'IllusionIQ' }} />,
   },
   {
     category: 'Research Project',
     title: 'Boat',
-    src: '/Boat_preview.png',
+    src: '/Boat/Boat_preview.png',
     content: <ProjectContent project={{ title: 'Autonomous Boat for Environmental Monitoring' }} />,
   },
   {

@@ -12,7 +12,7 @@ const researchData = {
       url: "https://www.igi-global.com/article/lidnerf/369336",
       abstract: "We present LIDNeRF, a novel approach for editing Neural Radiance Fields (NeRF) using text prompts. Our method leverages the power of diffusion models to guide the editing process, introducing an efficient loss function that better aligns score distillation sampling with the spatial representation in NeRFs.",
       tags: ["NeRF", "Diffusion Models", "Computer Graphics", "Text-to-3D"],
-      image: "/Nerf1.png"
+      image: "/Nerf/Nerf1.png"
     },
     {
       id: "pub2",
@@ -34,7 +34,7 @@ const researchData = {
       collaborators: ["Dr. Vaishali Kulkarni", "AI Lab"],
       tags: ["NeRF", "Diffusion Models", "3D Generation", "Text-to-3D"],
       relatedPublications: ["pub1"],
-      image: "/Nerf_preview.png"
+      image: "/Nerf/Nerf_preview.png"
     },
     {
       id: "res2",
@@ -43,7 +43,7 @@ const researchData = {
       duration: "2025 - Present",
       collaborators: ["DREAMS Lab", "Dr. Jnaneshwar Das"],
       tags: ["Autonomous Systems", "Environmental Monitoring", "Robotics"],
-      image: "/Boat_preview.png"
+      image: "/Boat/Boat_preview.png"
     },
     {
       id: "res3",

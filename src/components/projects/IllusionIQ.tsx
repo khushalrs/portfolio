@@ -34,11 +34,11 @@ const PROJECT: {
     { label: "GitHub Repository", href: "https://github.com/likhity/illusioniq" },
   ],
   images: [
-    { src: "https://placehold.co/500x500/1e293b/a5b4fc?text=Flip+Anagram", alt: "Flip anagram: giraffe ↔ penguin" },
-    { src: "https://placehold.co/500x500/1e293b/a5b4fc?text=Rotation+Illusion", alt: "Rotation: mountain village ↔ horse" },
-    { src: "https://placehold.co/500x500/1e293b/a5b4fc?text=Jigsaw+Illusion", alt: "Jigsaw: forest fox ↔ mountain cabin" },
-    { src: "https://placehold.co/500x500/1e293b/a5b4fc?text=Text-Blend", alt: "Text-blend: hidden word in cracked pavement" },
-    { src: "https://placehold.co/500x500/1e293b/a5b4fc?text=Color+Hybrid", alt: "Color hybrid: cactus ↔ Statue of Liberty" },
+    { src: "/IllusionIQ/Flip.png", alt: "Flip anagram: giraffe ↔ penguin" },
+    { src: "/IllusionIQ/Rotation.png", alt: "Rotation: mountain village ↔ horse" },
+    { src: "/IllusionIQ/Jigsaw.png", alt: "Jigsaw: forest fox ↔ mountain cabin" },
+    { src: "/IllusionIQ/TextBlend.png", alt: "Text-blend: hidden word in cracked pavement" },
+    { src: "/IllusionIQ/MultiObject.png", alt: "City ↔ Cow" },
   ],
 };
 
