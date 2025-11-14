@@ -79,6 +79,30 @@ const PROJECT_CONTENT = [
       { src: '/Boat4.png', alt: 'Autonomous boat deployed for research' },
     ],
   },
+  {
+    title: 'IllusionIQ',
+    description:
+      'A course project for CSE576 (NLP) that investigates whether multimodal LLMs can recognize and interpret optical illusions. We built a pipeline to generate 447 illusion images using diffusion models across six categories (Flips, Rotations, Jigsaws, Text-Blend Hybrids, Multi-Object Hybrids, and Color Hybrids), and benchmarked four major chatbots — GPT-4o, GPT-4.1, o4-mini, and Gemini 2.0 Flash — highlighting the disparity between human and model perception.',
+    techStack: [
+      'Python', 'PyTorch', 'Diffusion Models', 'Hugging Face', 'OpenAI API', 'Gemini API', 'Google Colab', 'ASU SOL HPC'
+    ],
+    date: 'Spring 2025',
+    links: [
+      { name: 'Project Page', url: '/projects/illusioniq' },
+      {
+        name: 'GitHub Repository',
+        url: 'https://github.com/likhity/illusioniq'
+      }
+    ],
+    images: [
+      { src: '/Illusion1.png', alt: 'Flip anagram illusion: giraffe ↔ penguin' },
+      { src: '/Illusion2.png', alt: 'Rotation illusion: mountain village ↔ horse' },
+      { src: '/Illusion3.png', alt: 'Jigsaw illusion: forest fox ↔ mountain cabin' },
+      { src: '/Illusion4.png', alt: 'Text-blend illusion: hidden word in cracked pavement' },
+      { src: '/Illusion5.png', alt: 'Color hybrid illusion: cactus ↔ Statue of Liberty' }
+    ],
+  },
+
   // === FACE RECOGNITION APP ===
   {
     title: 'Secure Video Player App with Face Recognition',
@@ -268,6 +292,12 @@ export const data = [
     title: 'Maze Solver',
     src: '/RobotArm_preview.png',
     content: <ProjectContent project={{ title: 'Inverse Kinematics on Robot Arm' }} />,
+  },
+  {
+    category: 'Course Project',
+    title: 'IllusionIQ',
+    src: '/RobotArm_preview.png',
+    content: <ProjectContent project={{ title: 'IllusionIQ' }} />,
   },
   {
     category: 'Research Project',
