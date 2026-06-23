@@ -1,9 +1,8 @@
 import Image from 'next/image';
-import { Image as Img } from 'lucide-react';
 import { ChevronRight, Link } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
 
-const PROJECT_CONTENT = [
+export const PROJECT_CONTENT = [
   // === DRONE MAPPING PROJECT ===
   {
     title: 'Multi-Drone Infrastructure Mapping',
@@ -276,20 +275,20 @@ const ProjectContent = ({ project }: { project: ProjectProps }) => {
 // Main data export with updated content
 export const data = [
   {
-    category: '',
-    title: '',
+    category: 'Robotics Project',
+    title: 'Multi-Drone Infrastructure Mapping',
     src: '/Drone/Drone_preview.png',
     content: <ProjectContent project={{ title: 'Multi-Drone Infrastructure Mapping' }} />,
   },
   {
     category: 'Research Project',
-    title: 'LIDNeRF',
+    title: 'LIDNeRF: Text-Guided Neural Radiance Field Editing',
     src: '/Nerf/Nerf_preview.png',
     content: <ProjectContent project={{ title: 'LIDNeRF: Text-Guided Neural Radiance Field Editing' }} />,
   },
   {
     category: 'Course Project',
-    title: 'Maze Solver',
+    title: 'Inverse Kinematics on Robot Arm',
     src: '/RobotArm/RobotArm_preview.png',
     content: <ProjectContent project={{ title: 'Inverse Kinematics on Robot Arm' }} />,
   },
@@ -301,21 +300,21 @@ export const data = [
   },
   {
     category: 'Research Project',
-    title: 'Boat',
+    title: 'Autonomous Boat for Environmental Monitoring',
     src: '/Boat/Boat_preview.png',
     content: <ProjectContent project={{ title: 'Autonomous Boat for Environmental Monitoring' }} />,
   },
   {
     category: 'Course Project',
-    title: 'Video Player App',
+    title: 'Secure Video Player App with Face Recognition',
     src: '/FaceApp_preview.png',
     content: <ProjectContent project={{ title: 'Secure Video Player App with Face Recognition' }} />,
   },
   {
     category: 'Research Project',
-    title: 'Image Stegano-graphy',
+    title: 'Image Steganography Through Hybrid Diffusion-GAN Models',
     src: '/Steganography_preview.png',
-    content: <ProjectContent project={{ title: 'Image Steganography using Diffusion and GAN Models' }} />,
+    content: <ProjectContent project={{ title: 'Image Steganography Through Hybrid Diffusion-GAN Models' }} />,
   },
   {
     category: 'Course Project',

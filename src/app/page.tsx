@@ -8,6 +8,8 @@ import { motion, easeInOut } from 'framer-motion';
 import {
   ArrowRight,
   BriefcaseBusiness,
+  Download,
+  LayoutGrid,
   Laugh,
   Layers,
   PartyPopper,
@@ -15,6 +17,7 @@ import {
   Microscope,
 } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 import GitHubButton from 'react-github-btn';
@@ -110,7 +113,7 @@ export default function Home() {
         </GitHubButton>
       </div>
 
-      <div className="absolute top-6 left-6 z-20">
+      <div className="absolute top-6 left-6 z-20 flex flex-col gap-2">
         <button
           onClick={() => goToChat('Are you looking for a job?')}
           className="cursor-pointer relative flex items-center gap-2 rounded-full border bg-white/30 px-4 py-1.5 text-sm font-medium text-black shadow-md backdrop-blur-lg transition hover:bg-white/60 dark:border-white dark:text-white dark:hover:bg-neutral-800"
@@ -122,6 +125,21 @@ export default function Home() {
           </span>
           need an employee?
         </button>
+        <a
+          href="/Khushal_Resume_new.pdf"
+          download
+          className="flex items-center gap-2 rounded-full border bg-white/30 px-4 py-1.5 text-sm font-medium text-black shadow-md backdrop-blur-lg transition hover:bg-white/60 dark:border-white dark:text-white dark:hover:bg-neutral-800"
+        >
+          <Download className="h-3.5 w-3.5" />
+          resume
+        </a>
+        <Link
+          href="/portfolio"
+          className="flex items-center gap-2 rounded-full border bg-white/30 px-4 py-1.5 text-sm font-medium text-black shadow-md backdrop-blur-lg transition hover:bg-white/60 dark:border-white dark:text-white dark:hover:bg-neutral-800"
+        >
+          <LayoutGrid className="h-3.5 w-3.5" />
+          portfolio
+        </Link>
       </div>
 
       {/* header */}

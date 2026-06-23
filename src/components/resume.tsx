@@ -13,8 +13,8 @@ export function Resume() {
     fileType: 'PDF',
     lastUpdated: 'March 2025',
     fileSize: '0.5 MB',
-    previewImageSrc: '/Khushal_resume_preview.png',
-    downloadUrl: '/Khushal_resume_new.pdf',
+    previewImageSrc: '/Khushal_Resume_preview.png',
+    downloadUrl: '/Khushal_Resume_new.pdf',
   };
 
   const handleDownload = () => {
