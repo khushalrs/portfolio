@@ -168,7 +168,7 @@ export default function PortfolioView() {
           <div className="flex-1">
             <div className="flex items-center gap-2 mb-3 text-sm text-slate-400">
               <MapPin className="h-4 w-4" />
-              Tempe, Arizona · ASU DREAMS Lab
+              Pleasanton, California, USA
             </div>
             <h1 className="text-4xl font-bold text-white sm:text-5xl md:text-6xl mb-3 leading-tight">
               Khushal Sharma

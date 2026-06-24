@@ -9,7 +9,7 @@ export function Presentation() {
   const profile = {
     name: 'Khushal Sharma',
     age: '23 years old',
-    location: 'Tempe, Arizona',
+    location: 'Pleasanton, California, USA',
     // Add a newline character after the emoji
     description:
       "Hey 👋\nI'm Khushal. I'm an AI developer and researcher pursuing my Master's in Robotics and AI at ASU. Currently working on my thesis at the DREAMS Lab with Dr. Das. I'm passionate about AI, robotics, and building tech that's smart, useful, and kinda fun to watch in action.",
